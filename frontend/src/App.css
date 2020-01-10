@@ -2,8 +2,10 @@ body {
   margin: 0;
   max-width: 1140px;
   margin: 0 auto;
-  padding: 150px 0;
+  padding: 100px 0;
 }
+
+/* ################ CONTAINER ################ */
 
 .container-outer {
   width: 100%;
@@ -26,4 +28,61 @@ body {
 
 .container-box-inner {
   padding: 5% 10%;
+}
+
+.container a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+/* ################ LOGO ################ */
+.logo {
+  margin: 0 auto;
+  margin-bottom: 100px;
+  text-align: center;
+  display: inline-block;
+  border-bottom: thin solid transparent;
+}
+
+.logo:hover {
+  border-bottom: thin solid #000;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+/* ################ MEDIA QUERIES ################ */
+@media screen and (max-width: 1024px) {
+
+  /* ################ CONTAINER ################ */
+  .container-outer {
+    width: 100%;
+    column-count: 2;
+    column-gap: 0;
+  }
+
+  /* ################ LOGO ################ */
+  /* .logo {
+    width: 100%;
+    background: #eee;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 30px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  body {
+    padding: 0;
+  } */
+
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
-import GetData from './Components/getData.jsx';
+import GetData from './Components/GetData.jsx';
 
 class App extends Component {
   constructor() {
