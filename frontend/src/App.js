@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
+import GetData from './Components/getData.jsx';
 
 class App extends Component {
   constructor() {
     super();
     this.getData();
-    this.state = { data: [] }
+    this.state = { data: [] };
   }
 
   getData() {
@@ -17,17 +18,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container-outer">
-        {this.state.data.map(data =>
-          <div className="container-box" key={data.url}>
-            <img src={data.multimedia[2].url} alt="" />
-            <div className="container-box-inner">
-              <a href={data.url} target="_blank" rel="noopener noreferrer"><h1>{data.title}</h1></a>
-              <p> {data.abstract} </p>
-            </div>
-          </div>
-        )}
-      </div>
+      <GetData data={this.state.data} />
     )
   }
 }
