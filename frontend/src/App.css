@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 150px 0;
+}
+
+.container-outer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container-outer img {
+  max-width: 100%;
+}
+
+.container-box {
+  margin: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  border-radius: 10px;
+}
+
+.container-box-inner {
+  padding: 5% 10%;
+}
